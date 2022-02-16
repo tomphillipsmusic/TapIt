@@ -8,17 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		3E4EF2BE27BD237B008802DB /* TapItApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4EF2BD27BD237B008802DB /* TapItApp.swift */; };
-		3E4EF2C027BD237B008802DB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4EF2BF27BD237B008802DB /* ContentView.swift */; };
+		3E4EF2C027BD237B008802DB /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4EF2BF27BD237B008802DB /* GameView.swift */; };
 		3E4EF2C227BD237C008802DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E4EF2C127BD237C008802DB /* Assets.xcassets */; };
 		3E4EF2C527BD237C008802DB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E4EF2C427BD237C008802DB /* Preview Assets.xcassets */; };
+		3E4EF2CC27BD238B008802DB /* TapItGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4EF2CB27BD238B008802DB /* TapItGame.swift */; };
+		3E4EF2CE27BD3413008802DB /* TapType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4EF2CD27BD3413008802DB /* TapType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3E4EF2BA27BD237B008802DB /* TapIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TapIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E4EF2BD27BD237B008802DB /* TapItApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapItApp.swift; sourceTree = "<group>"; };
-		3E4EF2BF27BD237B008802DB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3E4EF2BF27BD237B008802DB /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		3E4EF2C127BD237C008802DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E4EF2C427BD237C008802DB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3E4EF2CB27BD238B008802DB /* TapItGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapItGame.swift; sourceTree = "<group>"; };
+		3E4EF2CD27BD3413008802DB /* TapType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +55,10 @@
 		3E4EF2BC27BD237B008802DB /* TapIt */ = {
 			isa = PBXGroup;
 			children = (
+				3E4EF2CD27BD3413008802DB /* TapType.swift */,
 				3E4EF2BD27BD237B008802DB /* TapItApp.swift */,
-				3E4EF2BF27BD237B008802DB /* ContentView.swift */,
+				3E4EF2BF27BD237B008802DB /* GameView.swift */,
+				3E4EF2CB27BD238B008802DB /* TapItGame.swift */,
 				3E4EF2C127BD237C008802DB /* Assets.xcassets */,
 				3E4EF2C327BD237C008802DB /* Preview Content */,
 			);
@@ -137,8 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E4EF2C027BD237B008802DB /* ContentView.swift in Sources */,
+				3E4EF2C027BD237B008802DB /* GameView.swift in Sources */,
+				3E4EF2CC27BD238B008802DB /* TapItGame.swift in Sources */,
 				3E4EF2BE27BD237B008802DB /* TapItApp.swift in Sources */,
+				3E4EF2CE27BD3413008802DB /* TapType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

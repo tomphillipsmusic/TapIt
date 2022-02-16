@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct TapItApp: App {
+    @StateObject var game = TapItGame()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            GameView(game: game)
         }
     }
 }
