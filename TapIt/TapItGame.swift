@@ -5,13 +5,21 @@
 //  Created by Tom Phillips on 2/16/22.
 //
 
-import Foundation
+import SwiftUI
 
 class TapItGame: ObservableObject {
-    @Published var score = 0
-    @Published var currentInstruction = TapType.random
+    @AppStorage("highScore") var highScore = 0
     @Published var isGameOver = false
-    @Published var playerGuess: TapType? = nil {
+    @Published var score = 0 {
+        didSet {
+            if score > highScore {
+                highScore = score
+            }
+        }
+    }
+    
+    @Published var currentInstruction = TapType.random
+    @Published var playerGuess: TapType? {
         didSet {
             if playerGuess != nil {
                 determineGuess()
